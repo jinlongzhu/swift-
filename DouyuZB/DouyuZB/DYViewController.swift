@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DYViewController..swift
 //  DouyuZB
 //
 //  Created by 朱金龙 on 2019/3/5.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DYViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
