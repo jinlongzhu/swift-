@@ -11,6 +11,8 @@ import UIKit
 private let kTitleViewH :CGFloat = 40
 
 class HomeViewController: UIViewController {
+    
+    private lazy var recommendVM : RemmendViewModel = RemmendViewModel()
     // MARK: - 懒加载
     private lazy var pageTitleView : PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationH, width: kScreenW, height: kTitleViewH)
@@ -22,12 +24,12 @@ class HomeViewController: UIViewController {
     
     private lazy var pageContentView : PageContentView = { [weak self] in
         //1.确定frame
-        let contentH = kScreenH - kStatusBarH-kNavigationH
+        let contentH = kScreenH - kStatusBarH-kNavigationH - kTabbarH - kTitleViewH
         let contentFrame  = CGRect(x: 0, y: kStatusBarH+kNavigationH+kTitleViewH, width: kScreenW, height: contentH)
         //2.vc
         var childs = [UIViewController]()
-        
-        for _ in 0..<4{
+        childs.append(RecommendViewController())
+        for _ in 0..<3{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childs.append(vc)
@@ -44,6 +46,8 @@ class HomeViewController: UIViewController {
         
         //设置UI
         setupUI();
+        
+        setupData();
         
         
     }
@@ -74,6 +78,28 @@ extension HomeViewController {
         
         
         navigationItem.rightBarButtonItems = [historyItem,searchItem,grCodeItem]
+        
+    }
+    
+    private func setupData(){
+        /*
+         Alamofire.request("http://httpbin.org/get").responseJSON { (response) in
+         
+         guard let result = response.result.value else{
+         print(response.result.error ?? "报错了")
+         return
+         }
+         print(result)
+         }
+ 
+        NetworkTools.requsetData(type: .POST, urlString: "http://httpbin.org/post", parameters: nil) { (result) in
+          
+            print(result)
+        }
+        */
+        
+        recommendVM.requstData()
+        
         
     }
 }

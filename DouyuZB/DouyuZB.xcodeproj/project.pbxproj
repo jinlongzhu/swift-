@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF365929223A15260065BCFB /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF365928223A15260065BCFB /* NetworkTools.swift */; };
+		DF36592C223A381B0065BCFB /* RemmendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36592B223A381B0065BCFB /* RemmendViewModel.swift */; };
+		DF36592E223A40340065BCFB /* NSDate+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36592D223A40340065BCFB /* NSDate+Ext.swift */; };
+		DF365930223A47DB0065BCFB /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36592F223A47DB0065BCFB /* AnchorGroup.swift */; };
+		DFB1FE292239DD0D008DAEF2 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB1FE272239DD0D008DAEF2 /* CollectionPrettyCell.swift */; };
+		DFB1FE2A2239DD0D008DAEF2 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB1FE282239DD0D008DAEF2 /* CollectionPrettyCell.xib */; };
+		DFC378AB2238DA2400330862 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC378AA2238DA2400330862 /* RecommendViewController.swift */; };
+		DFC378AE2238FAE400330862 /* CollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC378AC2238FAE400330862 /* CollectionHeaderReusableView.swift */; };
+		DFC378AF2238FAE400330862 /* CollectionHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC378AD2238FAE400330862 /* CollectionHeaderReusableView.xib */; };
+		DFC378B32239003200330862 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC378B12239003200330862 /* CollectionNormalCell.swift */; };
+		DFC378B42239003200330862 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFC378B22239003200330862 /* CollectionNormalCell.xib */; };
+		E4E700F66879EAA90611A15D /* Pods_DouyuZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A467093F481F16ED9150C797 /* Pods_DouyuZB.framework */; };
 		F9B88C7A222EB41700A69415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B88C79222EB41700A69415 /* AppDelegate.swift */; };
 		F9B88C7C222EB41700A69415 /* DYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B88C7B222EB41700A69415 /* DYViewController.swift */; };
 		F9B88C7F222EB41700A69415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B88C7D222EB41700A69415 /* Main.storyboard */; };
@@ -45,6 +57,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7851F2E66A8487284D23E5DD /* Pods-DouyuZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyuZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyuZB/Pods-DouyuZB.release.xcconfig"; sourceTree = "<group>"; };
+		9FEE27F80E2D67EEBF78DBCB /* Pods-DouyuZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyuZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouyuZB/Pods-DouyuZB.debug.xcconfig"; sourceTree = "<group>"; };
+		A467093F481F16ED9150C797 /* Pods_DouyuZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouyuZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF365928223A15260065BCFB /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		DF36592B223A381B0065BCFB /* RemmendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemmendViewModel.swift; sourceTree = "<group>"; };
+		DF36592D223A40340065BCFB /* NSDate+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Ext.swift"; sourceTree = "<group>"; };
+		DF36592F223A47DB0065BCFB /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		DFB1FE272239DD0D008DAEF2 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		DFB1FE282239DD0D008DAEF2 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		DFC378AA2238DA2400330862 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		DFC378AC2238FAE400330862 /* CollectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderReusableView.swift; sourceTree = "<group>"; };
+		DFC378AD2238FAE400330862 /* CollectionHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderReusableView.xib; sourceTree = "<group>"; };
+		DFC378B12239003200330862 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		DFC378B22239003200330862 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		F9B88C76222EB41700A69415 /* DouyuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B88C79222EB41700A69415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B88C7B222EB41700A69415 /* DYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4E700F66879EAA90611A15D /* Pods_DouyuZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +123,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8621E2FA315EE66666FD226E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FEE27F80E2D67EEBF78DBCB /* Pods-DouyuZB.debug.xcconfig */,
+				7851F2E66A8487284D23E5DD /* Pods-DouyuZB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF36592A223A37DC0065BCFB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF36592B223A381B0065BCFB /* RemmendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DFC378A72238D7CA00330862 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF36592F223A47DB0065BCFB /* AnchorGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFC378A82238D7D200330862 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFC378AC2238FAE400330862 /* CollectionHeaderReusableView.swift */,
+				DFC378AD2238FAE400330862 /* CollectionHeaderReusableView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFC378A92238D7D800330862 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFC378AA2238DA2400330862 /* RecommendViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4BCF3E0DA9392459A350127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A467093F481F16ED9150C797 /* Pods_DouyuZB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9B88C6D222EB41600A69415 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +180,8 @@
 				F9B88C8D222EB41800A69415 /* DouyuZBTests */,
 				F9B88C98222EB41800A69415 /* DouyuZBUITests */,
 				F9B88C77222EB41700A69415 /* Products */,
+				8621E2FA315EE66666FD226E /* Pods */,
+				F4BCF3E0DA9392459A350127 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,9 +243,10 @@
 		F9B88CA8222FF60900A69415 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F9B88CF92230137900A69415 /* Model */,
-				F9B88CF82230137300A69415 /* View */,
-				F9B88CF72230136500A69415 /* Controller */,
+				DF36592A223A37DC0065BCFB /* ViewModel */,
+				DFC378A92238D7D800330862 /* Controller */,
+				DFC378A82238D7D200330862 /* View */,
+				DFC378A72238D7CA00330862 /* Model */,
 				F9B88CE822300CF800A69415 /* Home.storyboard */,
 				F9B88CF52230133100A69415 /* HomeViewController.swift */,
 			);
@@ -194,6 +274,7 @@
 			children = (
 				F9B88CFA223147D600A69415 /* Extension */,
 				F9B88D0522315B3A00A69415 /* Common.swift */,
+				DF365928223A15260065BCFB /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -207,32 +288,12 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
-		F9B88CF72230136500A69415 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F9B88CF82230137300A69415 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F9B88CF92230137900A69415 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		F9B88CFA223147D600A69415 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				F9B88CFB2231483200A69415 /* UIBarButtonItem-Extension.swift */,
 				F9B88D092234FC6300A69415 /* UIColor+EXT.swift */,
+				DF36592D223A40340065BCFB /* NSDate+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -241,24 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				F9B88D002231559300A69415 /* View */,
-				F9B88CFF2231558600A69415 /* ViewController */,
-				F9B88CFE2231557800A69415 /* Model */,
 			);
 			path = BaseUI;
-			sourceTree = "<group>";
-		};
-		F9B88CFE2231557800A69415 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F9B88CFF2231558600A69415 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F9B88D002231559300A69415 /* View */ = {
@@ -266,6 +311,10 @@
 			children = (
 				F9B88D01223155B900A69415 /* PageTitleView.swift */,
 				F9B88D072234F8E000A69415 /* PageContentView.swift */,
+				DFC378B12239003200330862 /* CollectionNormalCell.swift */,
+				DFC378B22239003200330862 /* CollectionNormalCell.xib */,
+				DFB1FE272239DD0D008DAEF2 /* CollectionPrettyCell.swift */,
+				DFB1FE282239DD0D008DAEF2 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,9 +326,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9B88C9E222EB41800A69415 /* Build configuration list for PBXNativeTarget "DouyuZB" */;
 			buildPhases = (
+				94AA7FE434021F6321E03C97 /* [CP] Check Pods Manifest.lock */,
 				F9B88C72222EB41600A69415 /* Sources */,
 				F9B88C73222EB41600A69415 /* Frameworks */,
 				F9B88C74222EB41600A69415 /* Resources */,
+				40A3256C3F110BF54955E6A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,11 +425,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC378AF2238FAE400330862 /* CollectionHeaderReusableView.xib in Resources */,
 				F9B88C84222EB41800A69415 /* LaunchScreen.storyboard in Resources */,
+				DFC378B42239003200330862 /* CollectionNormalCell.xib in Resources */,
 				F9B88C81222EB41800A69415 /* Assets.xcassets in Resources */,
 				F9B88C7F222EB41700A69415 /* Main.storyboard in Resources */,
 				F9B88CED22300D6600A69415 /* Live.storyboard in Resources */,
 				F9B88CF222300E9000A69415 /* Mine.storyboard in Resources */,
+				DFB1FE2A2239DD0D008DAEF2 /* CollectionPrettyCell.xib in Resources */,
 				F9B88CEA22300CF800A69415 /* Home.storyboard in Resources */,
 				F9B88CEF22300DFE00A69415 /* Follow.storyboard in Resources */,
 			);
@@ -400,20 +454,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40A3256C3F110BF54955E6A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DouyuZB/Pods-DouyuZB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouyuZB/Pods-DouyuZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94AA7FE434021F6321E03C97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouyuZB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9B88C72222EB41600A69415 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF365929223A15260065BCFB /* NetworkTools.swift in Sources */,
 				F9B88D02223155B900A69415 /* PageTitleView.swift in Sources */,
 				F9B88CFC2231483200A69415 /* UIBarButtonItem-Extension.swift in Sources */,
 				F9B88C7C222EB41700A69415 /* DYViewController.swift in Sources */,
 				F9B88D082234F8E000A69415 /* PageContentView.swift in Sources */,
+				DFC378AE2238FAE400330862 /* CollectionHeaderReusableView.swift in Sources */,
+				DF36592E223A40340065BCFB /* NSDate+Ext.swift in Sources */,
 				F9B88C7A222EB41700A69415 /* AppDelegate.swift in Sources */,
 				F9B88CF422300FC300A69415 /* MineViewController.swift in Sources */,
+				DF365930223A47DB0065BCFB /* AnchorGroup.swift in Sources */,
 				F9B88D0A2234FC6300A69415 /* UIColor+EXT.swift in Sources */,
 				F9B88CF62230133100A69415 /* HomeViewController.swift in Sources */,
 				F9B88D0622315B3A00A69415 /* Common.swift in Sources */,
+				DFB1FE292239DD0D008DAEF2 /* CollectionPrettyCell.swift in Sources */,
+				DFC378B32239003200330862 /* CollectionNormalCell.swift in Sources */,
+				DF36592C223A381B0065BCFB /* RemmendViewModel.swift in Sources */,
+				DFC378AB2238DA2400330862 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +719,7 @@
 		};
 		F9B88C9F222EB41800A69415 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEE27F80E2D67EEBF78DBCB /* Pods-DouyuZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -630,6 +740,7 @@
 		};
 		F9B88CA0222EB41800A69415 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7851F2E66A8487284D23E5DD /* Pods-DouyuZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
