@@ -20,6 +20,7 @@ private let kPrettyID = "kPrettyID"
 private let kHeaderID = "kHeaderID"
 
 class RecommendViewController: UIViewController {
+    private lazy var recommendVM : RemmendViewModel = RemmendViewModel()
     
     private lazy var collectionView : UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
@@ -43,7 +44,7 @@ class RecommendViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        
+        loadData()
         
     }
     
@@ -66,18 +67,13 @@ extension RecommendViewController {
 
 extension RecommendViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        return recommendVM.anchorGroups[section].anchors.count
     }
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendVM.anchorGroups.count
     }
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = UICollectionViewCell()
@@ -93,7 +89,9 @@ extension RecommendViewController : UICollectionViewDataSource , UICollectionVie
     
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderID, for: indexPath)
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderID, for: indexPath) as! CollectionHeaderReusableView
+        
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
         return headerView
     }
     
@@ -106,4 +104,14 @@ extension RecommendViewController : UICollectionViewDataSource , UICollectionVie
         }
     }
     
+}
+
+
+extension RecommendViewController{
+    
+    func loadData() {
+         recommendVM.requstData {
+            self.collectionView.reloadData()
+        }
+    }
 }

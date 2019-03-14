@@ -38,6 +38,10 @@ class AnchorGroup: NSObject {
         setValuesForKeys(dict)
     }
     
+    override init() {
+        
+    }
+    
     override func setValue(_ value: Any?, forKey key: String) {
         ///这句话很关键,一定要有
         super.setValue(value, forKey: key)
@@ -49,30 +53,14 @@ class AnchorGroup: NSObject {
 }
 @objcMembers
 class Room_listItem    : NSObject {
-    var room_id: String!
-    var show_time: Int = 0
-    var vertical_src: String!
-    var cate_id: Int = 0
-    var hot: Int = 0
-    var avatar_small: String!
-    var specific_status: Int = 0
-    var room_src: String!
-    var room_name: String!
-    var game_name: String!
-    var isVertical: Int = 0
-    var owner_uid: Int = 0
-    var ranktype: String!
+    
     var nickname: String!
-    var online: String!
-    var show_status: Int = 0
-    var specific_catalog: String!
-    var avatar_mid: String!
-    var jumpUrl: String!
-    var rmf1: Int = 0
-    var rmf2: Int = 0
-    var rmf3: Int = 0
-    var rmf4: Int = 0
-    var rmf5: Int = 0
+    var room_id: Int = 0
+    var vertical_src: String!
+    var online: Int = 0
+    var anchor_city: String = ""
+    var isVertical: Int = 0
+    
     
     init(dict:[String:AnyObject]) {
         super.init()

@@ -12,7 +12,7 @@ private let kTitleViewH :CGFloat = 40
 
 class HomeViewController: UIViewController {
     
-    private lazy var recommendVM : RemmendViewModel = RemmendViewModel()
+    
     // MARK: - 懒加载
     private lazy var pageTitleView : PageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH+kNavigationH, width: kScreenW, height: kTitleViewH)
@@ -46,10 +46,6 @@ class HomeViewController: UIViewController {
         
         //设置UI
         setupUI();
-        
-        setupData();
-        
-        
     }
 }
 
@@ -78,28 +74,6 @@ extension HomeViewController {
         
         
         navigationItem.rightBarButtonItems = [historyItem,searchItem,grCodeItem]
-        
-    }
-    
-    private func setupData(){
-        /*
-         Alamofire.request("http://httpbin.org/get").responseJSON { (response) in
-         
-         guard let result = response.result.value else{
-         print(response.result.error ?? "报错了")
-         return
-         }
-         print(result)
-         }
- 
-        NetworkTools.requsetData(type: .POST, urlString: "http://httpbin.org/post", parameters: nil) { (result) in
-          
-            print(result)
-        }
-        */
-        
-        recommendVM.requstData()
-        
         
     }
 }
